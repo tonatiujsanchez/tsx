@@ -5,15 +5,15 @@ import Image from "next/image"
 export const Hero = () => {
     return (
         <SectionHero>
-            <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 sm:gap-10 pt-8 pb-16 sm:py-10 md:py-16">
+            <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 lg:gap-10 pt-8 pb-16 sm:py-10 md:py-[6rem]">
                 <div className="relative md:order-2 px-10 sm:pl-0 lg:px-10 w-[21rem] md:w-[40%]">
-                    <figure className="relative border pt-12 mb-10 sm:mb-0 md:pt-14 shadow-lg rounded-full overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-sky-50 via-sky-50 to-sky-100">
+                    <figure className="relative border pt-4 mb-10 sm:mb-0 md:pt-5 shadow-lg rounded-full overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-sky-50 via-sky-50 to-sky-100">
                         <Image
                             priority
                             width={900}
                             height={900}
                             quality={80}
-                            src={'/img/photo-hero.png'}
+                            src={'/img/ton-hero.webp'}
                             alt={'Foto de Tontiuj Sánchez'}
                             title={'Tontiuj Sánchez'}
                             className='cover h-full w-full'
@@ -58,9 +58,9 @@ export const Hero = () => {
                     />
                 </div>
                 <div className="md:order-1 sm:px-5 sm:w-[70%] md:w-[55%]">
-                    <p className="font-bold text-xl mb-3">¡Hola! 👋 soy</p>
-                    <h1 className="text-4xl lg:text-5xl font-extrabold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">Tonatiuj Sánchez</h1>
-                    <p>Desarrollador Web Frontend en React.js, con bases solidas en Node.js</p>
+                    <p className="font-bold text-xl mb-0 md:mb-3">¡Hola! 👋 soy</p>
+                    <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
+                    <p>Desarrollador Web Frontend en React.js, con conocimientos en Node.js</p>
                     <ul className="flex items-center gap-4 mt-4">
                         <li>
                             <a

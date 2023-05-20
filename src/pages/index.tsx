@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <AboutMe />
       <main className="container">
-        HOLA MUNDO!
+        HOLA MUNDO!    
       </main>
     </LayoutMain>
   )
