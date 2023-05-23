@@ -1,16 +1,71 @@
+import Image from "next/image"
 
 
 
 export const AboutMe = () => {
     return (
         <section className="py-10 sm:py-16 bg-white">
-            <h2 className="text-center font-extrabold text-3xl md:text-4xl mb-5 md:mb-10">Sobre mi</h2>
-            <div className="container px-5 flex flex-col md:flex-row gap-10">
-                <div className="md:w-[40%]">
-                    foto
+            <div className="container px-5 flex flex-col md:flex-row md:items-center gap-10">
+                <div className="md:w-[40%] p-10">
+                    <figure className="relative border shadow-lg rounded overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-slate-50 via-sky-50 to-slate-100">
+                        <Image
+                            priority
+                            width={900}
+                            height={900}
+                            quality={80}
+                            src={'/img/aboutme.webp'}
+                            alt={'Foto de Tontiuj Sánchez'}
+                            title={'Tontiuj Sánchez'}
+                            className='cover h-full w-full'
+                        />
+                    </figure>
                 </div>
                 <div className="md:w-[60%]">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum blanditiis quasi dolor dolores placeat provident? Id omnis quisquam dicta ipsam.</p>
+                    <h2 className="text-center font-bold text-3xl md:text-4xl mb-5 md:mb-10">Sobre mi</h2>
+                    <p className="font-bold text-xl mb-2">¡Hola! Soy Tonatiuj Sánchez Jiménez</p>
+                    <p className="mb-5">Soy Desarrollador Web Frontend con un fuerte compromiso
+                        con la colaboración y solución de problemas de software,
+                        cumpliendo con los altos estándares de experiencia de usuario,
+                        usabilidad y rendimiento.</p>
+                    <p className="mb-5">He tenido la oportunidad de utilizar
+                        varios programas de diseño y lenguajes de programación para
+                        satisfacer con éxito las necesidades de diferentes tipos de
+                        clientes.</p>
+                        
+                    <p className="mb-5">Además de mi experiencia en el desarrollo web, también disfruto explorar nuevas tecnologías y aprender constantemente.</p>
+                    <p>Fuera del ámbito profesional, soy un entusiasta del Taekwondo, una disciplina que me ha enseñado valores fundamentales como la perseverancia, la disciplina y el respeto. A través de esta práctica, he desarrollado habilidades de concentración y trabajo en equipo que aplico en mi carrera como desarrollador.</p>
+                    <ul className="flex items-center gap-4 mt-4">
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/tonatiujsanchez"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="inline-block hover:scale-110 transition-all"
+                            >
+                                <i className='bx bxl-linkedin-square text-2xl'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/tonatiujsanchez"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="inline-block hover:scale-110 transition-all"
+                            >
+                                <i className='bx bxl-github text-2xl' ></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/tonatiujsanchez"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="inline-block hover:scale-110 transition-all"
+                            >
+                                <i className='bx bxl-twitter text-2xl'></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
