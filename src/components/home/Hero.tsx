@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export const Hero = () => {
     return (
-        <SectionHero>
+        <SectionHero id="home">
             <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 lg:gap-10 pt-8 pb-16 sm:py-10 md:py-[6rem]">
                 <div className="relative md:order-2 px-10 sm:pl-0 lg:px-10 w-[21rem] md:w-[40%]">
                     <figure className="relative border pt-4 mb-10 sm:mb-0 md:pt-5 shadow-lg rounded-full overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-sky-50 via-sky-50 to-sky-100">
@@ -59,40 +59,14 @@ export const Hero = () => {
                 </div>
                 <div className="md:order-1 sm:px-5 sm:w-[70%] md:w-[55%]">
                     <p className="font-bold text-xl mb-0 md:mb-3">¡Hola! 👋 soy</p>
-                    <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
-                    <p>Desarrollador Web Frontend en React.js, con conocimientos en Node.js</p>
-                    <ul className="flex items-center gap-4 mt-4">
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/tonatiujsanchez"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="inline-block hover:scale-110 transition-all"
-                            >
-                                <i className='bx bxl-linkedin-square text-2xl'></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/tonatiujsanchez"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="inline-block hover:scale-110 transition-all"
-                            >
-                                <i className='bx bxl-github text-2xl' ></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://twitter.com/tonatiujsanchez"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                className="inline-block hover:scale-110 transition-all"
-                            >
-                                <i className='bx bxl-twitter text-2xl'></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
+                    <p className="mb-5">Desarrollador Web Frontend en React.js, con conocimientos en Node.js</p>
+                    <LinkProjects href="#projects" className="learn-more">
+                        <span className="circle" aria-hidden="true">
+                            <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">Mis proyectos</span>
+                    </LinkProjects>
                 </div>
             </div>
         </SectionHero>
@@ -104,18 +78,100 @@ export const Hero = () => {
 const SectionHero = styled.section`
     background: radial-gradient(70.48% 49.48% at 10.38% 64.52%, #CDE9F5 0%, rgba(255, 255, 255, 0) 100%);
     
-    figure {
-        /* background: url('/img/bg-hero-home.jpg'); */
-        /* background: linear-gradient(to right, rgba(96, 165, 250, 0.8), rgba(52, 211, 153, 0.8)); */
-        /* background-size: cover; */
-        
-    }
-
     @media (min-width: 640px) {
         /* background: radial-gradient(20.48% 40.48% at 20.38% 60.52%, #CDE9F5 5%, rgba(255, 255, 255, 0) 90%); */
         background: radial-gradient(32.48% 53.48% at 17.38% 54.52%, #CDE9F5 0%, rgba(255, 255, 255, 0) 100%);
 
     }
+`
 
+const LinkProjects =  styled.a`
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+
+    &.learn-more {
+        width: 14rem;
+        height: auto;
+    }
+
+    &.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #213547;
+        border-radius: 1.625rem;
+    }
+
+    &.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+    }
+
+    &.learn-more .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+
+    &.learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+    }
+
+    &.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 2rem;
+        color: #282936;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &:hover .circle {
+        width: 100%;
+    }
+
+    &:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(1rem, 0);
+    }
+
+    &:hover .button-text {
+        color: #fff;
+    }
 
 `

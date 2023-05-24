@@ -29,3 +29,8 @@ body {
 .cover {
   object-fit: cover;
 }
+
+.active-link {
+  /* background-color: brown; */
+  background-color: rgb(148 163 184 / 0.2);
+}
