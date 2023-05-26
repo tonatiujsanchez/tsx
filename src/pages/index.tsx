@@ -10,9 +10,12 @@ export default function Home() {
     <LayoutMain>
       <Hero />
       <AboutMe />
-      <main className="container">
+      <main>
         <Projects />
       </main>
+
+      <section className="mt-20">
+      </section>
     </LayoutMain>
   )
 }
