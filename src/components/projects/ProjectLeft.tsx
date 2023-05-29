@@ -24,8 +24,8 @@ export const ProjectLeft:FC<Project> = ({ type, title, description, bgImage, ima
                         height={600}
                         quality={80}
                         src={ bgImage }
-                        alt={'Legado de Tlapa'}
-                        title={'Legado de Tlapa'}
+                        alt={ title }
+                        title={ title }
                         className='cover h-full w-full'
                     />
                 </figure>
@@ -36,8 +36,8 @@ export const ProjectLeft:FC<Project> = ({ type, title, description, bgImage, ima
                         height={600}
                         quality={80}
                         src={image}
-                        alt={'Legado de Tlapa'}
-                        title={'Legado de Tlapa'}
+                        alt={ title }
+                        title={ title }
                         className='contain h-full w-full'
                     />
                 </figure>

@@ -5,12 +5,12 @@ import styled from "@emotion/styled"
 
 
 interface Project {
-    type: string
-    title: string
+    type       : string
+    title      : string
     description: string
-    bgImage: string
-    image: string
-    slug: string
+    bgImage    : string
+    image      : string
+    slug       : string
 }
 
 export const ProjectRight: FC<Project> = ({ type, title, description, bgImage, image, slug }) => {
@@ -24,8 +24,8 @@ export const ProjectRight: FC<Project> = ({ type, title, description, bgImage, i
                         height={600}
                         quality={80}
                         src={ bgImage }
-                        alt={'Contextos Guerrero'}
-                        title={'Contextos Guerrero'}
+                        alt={ title }
+                        title={ title }
                         className='cover h-full w-full'
                     />
                 </figure>
@@ -36,8 +36,8 @@ export const ProjectRight: FC<Project> = ({ type, title, description, bgImage, i
                         height={600}
                         quality={80}
                         src={ image }
-                        alt={'Contextos Guerrero'}
-                        title={'Contextos Guerrero'}
+                        alt={ title }
+                        title={ title }
                         className='contain h-full w-full'
                     />
                 </figure>
