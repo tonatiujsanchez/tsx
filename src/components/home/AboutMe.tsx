@@ -5,8 +5,8 @@ import Image from "next/image"
 
 export const AboutMe = () => {
     return (
-        <section id="about" className="py-10 sm:py-24 bg-white">
-            <SectionAbout className="bg-white">
+        <section id="about" className="bg-white">
+            <SectionAbout className="py-10 sm:py-28 bg-white">
                 <div className="container px-5 flex flex-col md:flex-row md:items-center gap-10">
                     <div className="md:w-[40%] p-10 relative">
                         <figure className="relative border shadow-lg rounded overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-slate-50 via-sky-50 to-slate-100">
@@ -41,7 +41,7 @@ export const AboutMe = () => {
                             <p className="mb-5">Además de mi experiencia en el desarrollo web, también disfruto <strong>explorar nuevas tecnologías y aprender constantemente</strong>.</p>
                             <p>Fuera del ámbito profesional, soy un entusiasta del Taekwondo, una disciplina que me ha enseñado valores fundamentales como <strong>la perseverancia, la disciplina y el respeto</strong>. A través de esta práctica, he desarrollado habilidades de concentración y trabajo en equipo que aplico en mi carrera como desarrollador.</p>
                         </div>
-                        <ul className="flex items-center gap-4 mt-5">
+                        <ul className="flex items-center gap-4 mt-8">
                             <li>
                                 <a
                                     href="https://www.linkedin.com/in/tonatiujsanchez"
@@ -93,12 +93,11 @@ export const AboutMe = () => {
 
 const SectionAbout = styled.div`
     
-    background: radial-gradient(45.48% 30.48% at 80.38% 74.52%, #d5e9f1 0%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(45.48% 30.48% at 90.38% 74.52%, #d5e9f1 0%, rgba(255, 255, 255, 0) 100%);
     
     @media (min-width: 640px) {
         /* background: radial-gradient(20.48% 40.48% at 20.38% 60.52%, #CDE9F5 5%, rgba(255, 255, 255, 0) 90%); */
-        background: radial-gradient(32.48% 53.48% at 70.38% 54.52%, #ddedf3 0%, rgba(255, 255, 255, 0) 100%);
+        background: radial-gradient(32.48% 53.48% at 90.38% 60.52%, #ddedf3 0%, rgba(255, 255, 255, 0) 100%);
 
     }
-
 `

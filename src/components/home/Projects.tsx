@@ -4,7 +4,8 @@ import { ProjectLeft, ProjectRight } from "../projects"
 export const Projects = () => {
     return (
         <section id="projects" className="py-10 sm:py-24">
-            <h2 className="text-center font-extrabold text-3xl md:text-4xl mb-10 md:mb-20 uppercase">Proyectos</h2>
+            <h2 className="text-center font-extrabold text-3xl md:text-4xl uppercase mb-1">Proyectos</h2>
+            <p className="text-center uppercase md:text-xl font-medium mb-10 md:mb-20">recientes</p>
             <ProjectLeft
                 type="Sitio web"
                 title="Legado de Tlapa"
@@ -36,6 +37,14 @@ export const Projects = () => {
                 bgImage="/img/projects/admin-news-bg.webp"
                 image="/img/projects/admin-news-pc.webp"
                 slug="/admin-news"
+            />
+            <ProjectLeft
+                type="Ecommerce"
+                title="Teslo Shop"
+                description="Desarrolle una tienda de ropa en linea, producto de haber concluido en el curso 'Next.js: El framework de React para producción'"
+                bgImage="/img/projects/teslo-shop-bg.webp"
+                image="/img/projects/teslo-shop-pc.webp"
+                slug="/teslo-shop"
             />
 
         </section>

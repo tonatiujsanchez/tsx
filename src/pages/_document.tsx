@@ -13,7 +13,8 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800;900&display=swap" rel="stylesheet"/>
 
       </Head>
-      <body className='bg-blue-50' style={{ backgroundImage: 'linear-gradient( to right, rgb(191 219 254 / .1), rgb( 191 219 254 / .1) ), url(/img/bg-pattern-light.png)' }}>
+      {/* <body className='bg-blue-50' style={{ backgroundImage: 'linear-gradient( to right, rgb(191 219 254 / .1), rgb( 191 219 254 / .1) ), url(/img/bg-pattern-light.png)' }}> */}
+      <body className='bg-blue-50' style={{ backgroundImage: 'linear-gradient( to right, rgb(191 219 254 / 0), rgb( 191 219 254 / 0) )' }}>
         <Main />
         <NextScript />
       </body>

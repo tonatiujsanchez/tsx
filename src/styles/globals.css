@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 1144px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -33,4 +33,32 @@ body {
 .active-link {
   /* background-color: brown; */
   background-color: rgb(148 163 184 / 0.2);
+}
+
+/* ==== ==== ==== CUSTOM SCROLL ==== ==== ==== */
+
+.custom-scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.custom-scroll::-webkit-scrollbar:vertical {
+  width:8px;
+}
+
+.custom-scroll::-webkit-scrollbar-button:increment,.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.custom-scroll::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #cfcece;
+  border-radius: 20px;
+  border: 2px solid #f3f3f3;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  border-radius: 8px;  
 }

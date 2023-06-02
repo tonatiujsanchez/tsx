@@ -40,12 +40,12 @@ export const Navbar = () => {
                     </NextLink>
                 </li> */}
                 <li className="flex items-center">
-                    <NextLink 
-                        href={'/'} 
+                    <a 
+                        href={'#contact'} 
                         className="uppercase font-medium text-slate-950 text-sm px-5 py-2 hover:bg-slate-400/10 rounded-sm">
                             <i className='bx bxs-contact text-[1.3rem] block sm:hidden' ></i>
                             <span className="hidden sm:block">Contacto</span>
-                    </NextLink>
+                    </a>
                 </li>
             </ul>
         </nav>

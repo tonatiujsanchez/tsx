@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import { LayoutMain } from '@/components/layouts'
-import { AboutMe, Hero, Projects } from '@/components/home'
+import { AboutMe, Contact, Hero, Projects, SkillsAndExperience } from '@/components/home'
+import { Footer } from '@/components/shared'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -10,12 +11,13 @@ export default function Home() {
     <LayoutMain>
       <Hero />
       <AboutMe />
-      <main>
+      <SkillsAndExperience />
+      <main className="bg-white">
         <Projects />
       </main>
 
-      <section className="mt-20">
-      </section>
+      <Contact />
+      <Footer />
     </LayoutMain>
   )
 }
