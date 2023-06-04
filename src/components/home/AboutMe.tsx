@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export const AboutMe = () => {
     return (
-        <section id="about" className="bg-white">
+        <article className="bg-white">
             <SectionAbout className="py-10 sm:py-28 bg-white">
                 <div className="container px-5 flex flex-col md:flex-row md:items-center gap-10">
                     <div className="md:w-[40%] p-10 relative">
@@ -86,7 +86,7 @@ export const AboutMe = () => {
                     </div>
                 </div>
             </SectionAbout>
-        </section>
+        </article>
     )
 }
 

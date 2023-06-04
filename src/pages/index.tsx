@@ -7,17 +7,19 @@ import { Footer } from '@/components/shared'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return (
-    <LayoutMain>
-      <Hero />
-      <AboutMe />
-      <SkillsAndExperience />
-      <main className="bg-white">
-        <Projects />
-      </main>
+    return (
+        <LayoutMain>
+            <Hero />
+            <section id="about">
+                <AboutMe />
+                <SkillsAndExperience />
+            </section>
+            <main className="bg-white">
+                <Projects />
+            </main>
 
-      <Contact />
-      <Footer />
-    </LayoutMain>
-  )
+            <Contact />
+            <Footer />
+        </LayoutMain>
+    )
 }

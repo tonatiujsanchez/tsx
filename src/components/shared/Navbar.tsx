@@ -1,5 +1,3 @@
-import NextLink from 'next/link'
-
 
 export const Navbar = () => {
     return (
@@ -7,7 +5,7 @@ export const Navbar = () => {
             <ul className="flex gap-2 sm:gap-1">
                 <li className="flex items-center">
                     <a 
-                        href={'#home'} 
+                        href={'#hello'} 
                         className="uppercase font-medium text-slate-950 text-sm px-5 py-2 hover:bg-slate-400/10 rounded-sm">
                             <i className='bx bx-home text-[1.3rem] block sm:hidden'></i>
                             <span className="hidden sm:block">Hola</span>

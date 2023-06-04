@@ -1,150 +1,144 @@
-import { Swiper, SwiperSlide } from "swiper/react"
-
-import "swiper/css"
-import "swiper/css/pagination"
-
-import { Pagination } from "swiper"
 import Image from "next/image"
 
 
 export const SkillsAndExperience = () => {
     return (
-        <section className="py-10 sm:py-20">
+        <article className="py-10 sm:py-20">
 
             <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-28 justify-evenly">
                 <div>
                     <h2 className="text-center font-extrabold text-3xl md:text-3xl uppercase mb-5 sm:mb-10 lg:mb-16">Habilidades</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 lg:w-[80%] mx-auto">
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-javascript-600/20">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-javascript-600/20">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/javascript-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Javascript'}
+                                    title={'Javascript'}
                                     className='cover w-8'
                                 />
                             </figure>
                             <p className="font-semibold">Javascript</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-typescript-600/20">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-typescript-600/20">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/typescript-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Typescript'}
+                                    title={'Typescript'}
                                     className='cover w-8'
                                 />
                             </figure>
                             <p className="font-semibold">Typescript</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-react-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-react-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/react-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de React.js'}
+                                    title={'React.js'}
                                     className='cover w-10'
                                 />
                             </figure>
-                            <p className="font-semibold">react</p>
+                            <p className="font-semibold">React</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-next-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-next-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/nextjs-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Next.js'}
+                                    title={'Next.js'}
                                     className='cover w-12'
                                 />
                             </figure>
                             <p className="font-semibold">Next.js</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-node-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-node-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/nodejs-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Node.js'}
+                                    title={'Node.js'}
                                     className='cover w-8'
                                 />
                             </figure>
                             <p className="font-semibold">Node</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-sql-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-sql-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/db-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de SQL'}
+                                    title={'SQL'}
                                     className='cover w-10 opacity-90'
                                 />
                             </figure>
                             <p className="font-semibold">SQL</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-mongo-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-mongo-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/mongodb-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de MongoDB'}
+                                    title={'MongoDB'}
                                     className='cover w-11'
                                 />
                             </figure>
                             <p className="font-semibold">MongoDB</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-git-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-git-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/git-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de GIT'}
+                                    title={'GIT'}
                                     className='cover w-10'
                                 />
                             </figure>
                             <p className="font-semibold">GIT</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <figure className="w-20 h-20 mb-2 flex items-center justify-center rounded-full bg-github-600/10">
+                            <figure className="w-24 h-24 mb-2 flex items-center justify-center rounded-full bg-github-600/10">
                                 <Image
                                     priority
                                     width={50}
                                     height={50}
                                     quality={80}
                                     src={'/icons/github-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de GitHub'}
+                                    title={'GitHub'}
                                     className='cover w-11'
                                 />
                             </figure>
@@ -158,8 +152,8 @@ export const SkillsAndExperience = () => {
                                     height={50}
                                     quality={80}
                                     src={'/icons/sass-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Sass'}
+                                    title={'Sass'}
                                     className='cover w-11'
                                 />
                             </figure>
@@ -173,8 +167,8 @@ export const SkillsAndExperience = () => {
                                     height={50}
                                     quality={80}
                                     src={'/icons/tailwind-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Tailwind'}
+                                    title={'Tailwind'}
                                     className='cover w-11'
                                 />
                             </figure>
@@ -188,8 +182,8 @@ export const SkillsAndExperience = () => {
                                     height={50}
                                     quality={80}
                                     src={'/icons/figma-icon.svg'}
-                                    alt={'Foto de Tontiuj Sánchez'}
-                                    title={'Tontiuj Sánchez'}
+                                    alt={'Icono de Figma'}
+                                    title={'Figma'}
                                     className='cover w-11'
                                 />
                             </figure>
@@ -297,6 +291,6 @@ export const SkillsAndExperience = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
     )
 }

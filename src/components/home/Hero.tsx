@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export const Hero = () => {
     return (
-        <SectionHero id="home">
-            <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 lg:gap-10 pt-8 pb-16 sm:py-10 md:py-[6rem]">
+        <SectionHero id="hello">
+            <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 lg:gap-20 pt-8 pb-16 sm:py-10 md:py-[6rem]">
                 <div className="relative md:order-2 px-10 sm:pl-0 lg:px-10 w-[21rem] md:w-[40%]">
                     <figure className="relative border pt-4 mb-10 sm:mb-0 md:pt-5 shadow-lg rounded-full overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-sky-50 via-sky-50 to-sky-100">
                         <Image
