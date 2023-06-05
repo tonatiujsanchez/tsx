@@ -1,20 +1,22 @@
 
 
 export interface IProject {
-    title    : string
-    subtitle : string
-    slug     : string
-    type     : string
-    summary  : string
-    image    : string
+    title      : string
+    subtitle   : string
+    slug       : string
+    type       : string
+    summary    : string
+    description: string
+    image      : string
     imagePreview : string
-    bgImage  : string
-    banner   : string
+    bgImage    : string
+    banner     : string
     technologies: ITechnology[]
-    links    : ILink[]
-    position: 'left' | 'right'
-    client   : string
-    images   : IImageCapture[]
+    links      : ILink[]
+    position   : 'left' | 'right'
+    client     : string
+    versions   : string[]
+    images     : IImageCapture[]
 }
 
 

@@ -49,6 +49,9 @@ module.exports = {
         figma: {
           600: '#F34E1C'
         },
+        emotion: {
+          600: '#D26AC2'
+        }
       }
     },
   },
