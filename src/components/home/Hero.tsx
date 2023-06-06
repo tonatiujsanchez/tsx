@@ -59,7 +59,7 @@ export const Hero = () => {
                 </div>
                 <div className="md:order-1 sm:px-5 sm:w-[70%] md:w-[55%]">
                     <p className="font-bold text-xl mb-0 md:mb-3">¡Hola! 👋 soy</p>
-                    <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-[3.5rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
+                    <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-[3.5rem] xl:text-[3.9rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
                     <p className="mb-5 md:text-xl">Desarrollador Web Frontend en React.js, con conocimientos solidos de backend.</p>
                     <LinkProjects href="#projects" className="learn-more">
                         <span className="circle" aria-hidden="true">
@@ -79,7 +79,6 @@ const SectionHero = styled.section`
     background: radial-gradient(70.48% 49.48% at 10.38% 64.52%, #CDE9F5 0%, rgba(255, 255, 255, 0) 100%);
     
     @media (min-width: 640px) {
-        /* background: radial-gradient(20.48% 40.48% at 20.38% 60.52%, #CDE9F5 5%, rgba(255, 255, 255, 0) 90%); */
         background: radial-gradient(32.48% 53.48% at 17.38% 54.52%, #CDE9F5 0%, rgba(255, 255, 255, 0) 100%);
 
     }

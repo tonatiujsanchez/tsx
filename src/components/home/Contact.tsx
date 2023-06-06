@@ -3,7 +3,7 @@
 
 export const Contact = () => {
     return (
-        <section id="contact" className="py-10 sm:py-28">
+        <section id="contact" className="py-12 sm:py-28">
             <h2 className="text-center font-extrabold text-3xl md:text-4xl uppercase mb-3">Contacto</h2>
             <p className="text-center max-w-[40rem] mx-auto md:text-lg mb-10 sm:mb-20">Si estás interesado en trabajar conmigo en tu próximo proyecto, no dudes en ponerte en contacto conmigo.</p>
             <div className="container grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 px-5">

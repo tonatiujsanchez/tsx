@@ -17,6 +17,7 @@ export interface IProject {
     client     : string
     versions   : string[]
     images     : IImageCapture[]
+    message    : string
 }
 
 

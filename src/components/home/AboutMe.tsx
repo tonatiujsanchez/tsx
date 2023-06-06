@@ -7,7 +7,7 @@ export const AboutMe = () => {
     return (
         <article className="bg-white">
             <SectionAbout className="py-10 sm:py-28 bg-white">
-                <div className="container px-5 flex flex-col md:flex-row md:items-center gap-10">
+                <div className="container px-5 flex flex-col md:flex-row md:items-center gap-10 lg:gap-24">
                     <div className="md:w-[40%] p-10 relative">
                         <figure className="relative border shadow-lg rounded overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-slate-50 via-sky-50 to-slate-100">
                             <Image

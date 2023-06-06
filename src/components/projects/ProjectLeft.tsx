@@ -16,7 +16,7 @@ interface Project {
 
 export const ProjectLeft:FC<Project> = ({ type, title, description, bgImage, image, slug }) => {
     return (
-        <article className="p-5 sm:p-0 sm:grid sm:grid-cols-2 sm:items-center gap-10 lg:gap-20 my-10">
+        <article id={slug} className="p-5 sm:p-0 sm:grid sm:grid-cols-2 sm:items-center gap-10 lg:gap-20 my-10">
             <div className="relative h-[25rem] sm:h-[28rem] lg:h-[40rem] mb-5">
                 <figure className="h-full w-[65%] lg:w-[75%]">
                     <Image

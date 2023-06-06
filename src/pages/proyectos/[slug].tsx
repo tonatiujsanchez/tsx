@@ -3,20 +3,19 @@ import NextLink from 'next/link'
 
 import Image from "next/image"
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination, Navigation, Autoplay } from "swiper";
+import styled from "@emotion/styled"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { FreeMode, Pagination, Autoplay } from "swiper"
 
 import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
+import "swiper/css/free-mode"
 
-import "swiper/css/pagination";
+import "swiper/css/pagination"
 
+import { Footer } from "@/components/shared"
 
 import { projects } from "@/data"
 import { IProject } from "@/interfaces"
-import styled from "@emotion/styled";
-import { Footer } from "@/components/shared";
 
 interface Props {
     project: IProject
@@ -43,7 +42,7 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                     <p className="font-bold text-xl sm:text-2xl" style={{ textShadow: '1px 1px 2px rgba(0,0,0, 0.5)' }}>{project.subtitle}</p>
                 </div>
                 <NextLink
-                    href={'/#projects'}
+                    href={`/#${ project.slug }`}
                     className="text-white absolute top-10 left-10 text-xl flex items-center gap-2"
                 >
                     <i className='bx bx-arrow-back'></i> Regresar
@@ -194,28 +193,17 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
             </main>
             <section className="text-center bg-white px-10 py-16 sm:py-24 lg:py-32">
                 <div className="max-w-[650px] flex flex-col items-center justify-center gap-5 mx-auto">
-                    <h2 className="font-bold text-xl sm:text-[2rem]">Otra gran logro</h2>
-                    <p className="sm:mb-5 md:text-lg">Trabajar en este proyecto ha sido grandioso, tuve la oportunidad de desarrollarlo de principio a fin, desde el diseño de la interfaz y experiencia de usuario, el modelado de la base de datos, hasta su implementación.</p>
+                    <h2 className="font-bold text-xl sm:text-[2rem]">Otro gran logro</h2>
+                    <p className="sm:mb-5 md:text-lg">{ project.message }</p>
                     <NextLink
-                        href={'/#projects'}
+                        href={`/#${ project.slug }`}
                         className="text-xl flex w-36 items-center gap-1 hover:text-black"
                     >
                         <i className='bx bx-arrow-back'></i> Regresar
                     </NextLink>
                 </div>
             </section>
-            <footer className="border-t py-4 bg-white">
-                <p className="text-center">
-                    <a href="https://twitter.com/tonatiujsanchez"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="block sm:inline hover:text-blue-700"
-                    >
-                            @tonatiujsanchez 
-                    </a>
-                    &nbsp; © 2023 Todos los derechos reservados 
-                </p>
-            </footer>
+            <Footer bgColor="bg-white" />
         </>
     )
 }

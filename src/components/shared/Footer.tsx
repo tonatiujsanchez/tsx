@@ -1,10 +1,13 @@
+import { FC } from "react"
 
 
+interface Props {
+    bgColor?: string
+}
 
-export const Footer = () => {
+export const Footer:FC<Props> = ({ bgColor='' }) => {
     return (
-        <footer className="border-t py-4 mb-[5.5rem] sm:mb-0">
-            {/* <p className="text-center">copyright © 2023 Todos los derechos reservados</p> */}
+        <footer className={`border-t py-1 sm:py-4 ${ bgColor }`}>
             <p className="text-center">
                 <a href="https://twitter.com/tonatiujsanchez"
                     rel="noopener noreferrer"
