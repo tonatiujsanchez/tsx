@@ -18,6 +18,7 @@ export interface IProject {
     versions   : string[]
     images     : IImageCapture[]
     message    : string
+    properties : PropertiesViewProject
 }
 
 
@@ -37,4 +38,11 @@ export interface ILink {
 export interface IImageCapture {
     url  : string
     title: string
+}
+
+export interface PropertiesViewProject {
+    spaceBetween: number;
+    slidesPerView: number;
+    spaceBetweenLg: number;
+    slidesPerViewLg: number;
 }

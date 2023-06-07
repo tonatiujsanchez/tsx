@@ -29,7 +29,7 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
             <header className="h-[60vh] sm:h-[50vh] lg:h-[85vh] bg-gradient-to-b from-black/40 to-black/90 relative flex justify-center items-center">
                 <Image
                     priority
-                    width={1200}
+                    width={1700}
                     height={1000}
                     quality={100}
                     src={`${process.env.NEXT_PUBLIC_HOST_NAME}/${project.banner}`}
@@ -66,9 +66,9 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                         </figure>
                         <div className="flex flex-col items-center sm:items-start lg:mb-16">
                             <div>
-                                <p className="text-base sm:text-xl mb-4 font-medium">{project.type}</p>
-                                <h2 className="font-bold text-xl sm:text-[2rem] mb-5">{project.title}</h2>
-                                <p className="mb-3 sm:mb-5 md:text-lg">{project.description}</p>
+                                <p className="text-base sm:text-xl mb-1 sm:mb-4 font-medium">{project.type}</p>
+                                <h2 className="font-bold text-[1.5rem] sm:text-[2rem] mb-3 sm:mb-5">{project.title}</h2>
+                                <div className="[&>p]:md:text-lg [&>p]:mb-2 mb-3" dangerouslySetInnerHTML={{ __html: project.description }}></div>
                             </div>
                             <div className="mt-5">
                                 <h3 className="font-semibold mb-5 uppercase">Tecnologías</h3>
@@ -143,8 +143,8 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                 <SliderSection className="py-[4rem] px-5 sm:px-10">
                     <h2 className="font-extrabold text-xl sm:text-[2rem] text-center lg:mb-5">Algunas vistas destacadas</h2>
                     <Swiper
-                        slidesPerView={2}
-                        spaceBetween={10}
+                        slidesPerView={ project.properties.slidesPerView }
+                        spaceBetween={project.properties.spaceBetween}
                         freeMode={true}
                         pagination={{
                             clickable: true,
@@ -158,7 +158,8 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                               slidesPerView: 3,
                             },
                             1024: {
-                              slidesPerView: 5,
+                                slidesPerView: project.properties.slidesPerViewLg,
+                                spaceBetween: project.properties.spaceBetweenLg
                             },
                         }}
                         autoplay={{
@@ -173,13 +174,13 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                                     <figure className="relative flex flex-col justify-center gap-4">
                                         <Image
                                             priority
-                                            width={750}
-                                            height={750}
+                                            width={520}
+                                            height={720}
                                             quality={100}
                                             src={`${process.env.NEXT_PUBLIC_HOST_NAME}/${img.url}`}
                                             alt={img.title}
                                             title={img.title}
-                                            className="block h-full w-full"
+                                            className="block h-full w-full bg-slate-200"
                                         />
                                         <figcaption className="font-medium text-base text-center">
                                             { img.title }
@@ -192,7 +193,7 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                 </SliderSection>
             </main>
             <section className="text-center bg-white px-10 py-16 sm:py-24 lg:py-32">
-                <div className="max-w-[650px] flex flex-col items-center justify-center gap-5 mx-auto">
+                <div className="max-w-[720px] flex flex-col items-center justify-center gap-5 mx-auto">
                     <h2 className="font-bold text-xl sm:text-[2rem]">Otro gran logro</h2>
                     <p className="sm:mb-5 md:text-lg">{ project.message }</p>
                     <NextLink

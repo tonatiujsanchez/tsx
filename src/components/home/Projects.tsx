@@ -25,7 +25,7 @@ export const Projects = () => {
             <ProjectLeft
                 type="Aplicación web"
                 title="Share Groups"
-                description="Diseñe y Desarrolle una aplicación web para administrar paginas, pefiles y grupos de facebook con el objetivo de campartir publicaciones de forma aleatoria."
+                description="Diseñe y Desarrolle una aplicación web para administrar páginas, perfiles y grupos de Facebook con el objetivo de compartir publicaciones de forma aleatoria."
                 bgImage="/img/projects/share-groups-bg-blue.webp"
                 image="/img/projects/share-groups-pc.webp"
                 slug="share-groups"
