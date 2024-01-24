@@ -10,9 +10,9 @@ export const Hero = () => {
                     <figure className="relative border pt-4 mb-10 sm:mb-0 md:pt-5 shadow-lg rounded-full overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-sky-50 via-sky-50 to-sky-100">
                         <Image
                             priority
-                            width={900}
-                            height={900}
-                            quality={80}
+                            width={460}
+                            height={630}
+                            quality={90}
                             src={'/img/ton-hero.webp'}
                             alt={'Foto de Tontiuj Sánchez'}
                             title={'Tontiuj Sánchez'}

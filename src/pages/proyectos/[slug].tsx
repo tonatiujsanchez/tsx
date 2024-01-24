@@ -32,7 +32,7 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                     width={1700}
                     height={1000}
                     quality={100}
-                    src={`${process.env.NEXT_PUBLIC_HOST_NAME}/${project.banner}`}
+                    src={ project.banner }
                     alt={project.title}
                     title={project.title}
                     className="h-full w-full object-cover absolute mix-blend-overlay"
@@ -58,7 +58,7 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                                 width={720}
                                 height={600}
                                 quality={80}
-                                src={`${process.env.NEXT_PUBLIC_HOST_NAME}/${project.image}`}
+                                src={ project.image }
                                 alt={project.title}
                                 title={project.title}
                                 className='contain h-full w-full'
@@ -177,7 +177,7 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                                             width={520}
                                             height={720}
                                             quality={100}
-                                            src={`${process.env.NEXT_PUBLIC_HOST_NAME}/${img.url}`}
+                                            src={ img.url }
                                             alt={img.title}
                                             title={img.title}
                                             className="block h-full w-full bg-slate-200"
