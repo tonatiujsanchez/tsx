@@ -32,11 +32,11 @@ export const Projects = () => {
             />
             <ProjectRight
                 type="Aplicación web"
-                title="Admin News"
+                title="Admin Sites"
                 description="Diseñe y Desarrolle un dashboard administrativo con roles de usuario para administrar la estructura y contenido de sitios web informativos."
-                bgImage="/img/projects/admin-news-bg.webp"
-                image="/img/projects/admin-news-pc.webp"
-                slug="admin-news"
+                bgImage="/img/projects/admin-sites-bg.webp"
+                image="/img/projects/admin-sites-pc.webp"
+                slug="admin-sites"
             />
             <ProjectLeft
                 type="Ecommerce"
