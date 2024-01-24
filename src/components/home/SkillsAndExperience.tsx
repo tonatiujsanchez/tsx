@@ -3,10 +3,10 @@ import Image from "next/image"
 
 export const SkillsAndExperience = () => {
     return (
-        <article className="py-10 sm:py-20">
+        <article className="py-10 sm:py-20 relative">
 
             <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-28 justify-evenly">
-                <div>
+                <div className="lg:sticky lg:top-24 lg:h-[47rem]">
                     <h2 className="text-center font-extrabold text-3xl md:text-3xl uppercase mb-5 sm:mb-10 lg:mb-16">Habilidades</h2>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 lg:w-[80%] mx-auto">
                         <div className="flex flex-col items-center">
@@ -194,8 +194,7 @@ export const SkillsAndExperience = () => {
                 </div>
                 <div className="px-5 mx-auto sm:mx-10 lg:mx-0">
                     <h2 className="text-center font-extrabold text-3xl md:text-3xl uppercase mb-5 sm:mb-10 lg:mb-16">Experiencia</h2>
-
-                    <div className="max-h-[620px] overflow-y-auto custom-scroll">
+                    <div className="">
                         <div className="flex gap-12 mb-10">
                             <div className="text-blue-700 font-semibold">2023</div>
                             <div className="flex flex-col gap-5">
