@@ -16,7 +16,7 @@ export const Footer:FC<Props> = ({ bgColor='' }) => {
                 >
                         @tonatiujsanchez 
                 </a>
-                &nbsp; © 2023 Todos los derechos reservados 
+                &nbsp; © { new Date().getFullYear() } Todos los derechos reservados 
             </p>
         </footer>
     )

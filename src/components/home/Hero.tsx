@@ -5,8 +5,8 @@ import Image from "next/image"
 export const Hero = () => {
     return (
         <SectionHero id="hello">
-            <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 lg:gap-20 pt-8 pb-16 sm:py-10 md:py-[6rem]">
-                <div className="relative md:order-2 px-10 sm:pl-0 lg:px-10 w-[21rem] md:w-[40%]">
+            <div className="container px-5 flex flex-col items-center md:flex-row md:justify-center gap-4 lg:gap-12 pt-8 pb-16 sm:py-10 md:py-[6rem]">
+                <div className="relative md:order-2 px-10 sm:pl-0 lg:px-10 w-[21rem] md:w-[35%]">
                     <figure className="relative border pt-4 mb-10 sm:mb-0 md:pt-5 shadow-lg rounded-full overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-sky-50 via-sky-50 to-sky-100">
                         <Image
                             priority
@@ -60,7 +60,7 @@ export const Hero = () => {
                 <div className="md:order-1 sm:px-5 sm:w-[70%] md:w-[55%]">
                     <p className="font-bold text-xl mb-0 md:mb-3">¡Hola! 👋 soy</p>
                     <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-[3.5rem] xl:text-[3.9rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
-                    <p className="mb-5 md:text-xl">Desarrollador Web Frontend en React.js, con conocimientos solidos de backend.</p>
+                    <p className="mb-5 md:text-xl max-w-[40rem]">Desarrollador Web Frontend en React.js, con conocimientos sólidos de Node.js</p>
                     <LinkProjects href="#projects" className="learn-more">
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>

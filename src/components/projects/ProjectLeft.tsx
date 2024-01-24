@@ -44,7 +44,7 @@ export const ProjectLeft:FC<Project> = ({ type, title, description, bgImage, ima
                 </figure>
             </div>
             <ProjectDescription className="max-w-[35rem] flex flex-col items-center sm:items-start lg:mb-16 sm:px-5">
-                <p className="text-base sm:text-xl mb-2">{ type }</p>
+                <p className="text-[1.1rem] mb-2">{ type }</p>
                 <h3 className="font-bold text-xl sm:text-[2rem] text-center sm:text-left mb-3">{ title }</h3>
                 <p className="text-center sm:text-left mb-3 sm:mb-5 md:text-lg">{ description }</p>
                 <NextLink href={`/proyectos/${ slug }`} className="link-project learn-more">

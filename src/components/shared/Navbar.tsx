@@ -25,18 +25,8 @@ export const Navbar = () => {
                         className="uppercase font-medium text-slate-950 text-sm px-5 py-2 hover:bg-slate-400/10 rounded-sm">
                             <i className='bx bx-collection text-[1.3rem] block sm:hidden' ></i>
                             <span className="hidden sm:block">Proyectos</span>
-                            {/* <i className='bx bx-spreadsheet' ></i> */}
-                            {/* <i className='bx bx-layer' ></i> */}
                     </a>
                 </li>
-                {/* <li className="flex items-center">
-                    <NextLink 
-                        href={'/'} 
-                        className="uppercase font-medium text-slate-600 text-sm">
-                            <i className='bx bx-news text-[1.3rem] block sm:hidden' ></i>
-                            <span className="hidden sm:block">Blog</span>
-                    </NextLink>
-                </li> */}
                 <li className="flex items-center">
                     <a 
                         href={'#contact'} 
