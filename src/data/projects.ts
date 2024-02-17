@@ -439,6 +439,77 @@ export const projects:IProject[] = [
             spaceBetweenLg: 20,
             slidesPerViewLg: 3
         }
+    },
+    {
+        title: "DevManager",
+        subtitle: "¡Gestiona tus Proyectos con Colaboradores en Tiempo Real!",
+        slug:"devmanager",
+        type:"Aplicación Web",
+        summary: "<p>DevManager es un proyecto personal en constante evolución, diseñado para la gestión eficiente de proyectos colaborativos con características en tiempo real. Lo utilizo diariamente y estoy comprometido con su mejora continua y la adición de nuevas funcionalidades.</p>",
+        description: "<p>DevManager es un proyecto personal en constante evolución, diseñado para la gestión eficiente de proyectos colaborativos con características en tiempo real. Lo utilizo diariamente y estoy comprometido con su mejora continua y la adición de nuevas funcionalidades.</p>",
+        image: "/img/projects/devmanager-pc-mobile.webp",
+        imagePreview: "/img/projects/admin-sites-pc.webp",
+        bgImage: "/img/projects/admin-sites-bg-blue.webp",
+        banner: "/img/projects/devmanager-banner.webp",
+        technologies: [
+            {
+                name: "React",
+                icon: "react-icon.svg",
+                styleClases: "border border-react-600 text-react-600"
+            },
+            {
+                name: "Typescript",
+                icon: "typescript-icon.svg",
+                styleClases: "border border-typescript-600"
+            },
+            {
+                name: "Node",
+                icon: "nodejs-icon.svg",
+                styleClases: "border border-node-600"
+            },
+            {
+                name: "Mongo DB",
+                icon: "mongodb-icon.svg",
+                styleClases: "border border-mongo-600"
+            },
+            {
+                name: "Tailwind",
+                icon: "tailwind-icon.svg",
+                styleClases: "border border-tailwind-600"
+            },
+        ],
+        client: "Proyecto personal",
+        position: "right",
+        links: [
+            {
+                title: "Ver proyecto",
+                type: "preview",
+                url: "https://devmanager.xyz"
+            },
+            {
+                title: "Ver repositorio - Frontend",
+                type: "repository",
+                url: "https://github.com/tonatiujsanchez/devmanager.xyz-frontend"
+            },
+            {
+                title: "Ver repositorio - Backend",
+                type: "repository",
+                url: "https://github.com/tonatiujsanchez/devmanager.xyz-backend"
+            }
+        ],
+        versions: [
+            "Desktop",
+            "Mobile"
+        ],
+        images: [],
+        message: "",
+        properties: {
+            spaceBetween: 10,
+            slidesPerView: 2,
+
+            spaceBetweenLg: 20,
+            slidesPerViewLg: 3
+        }
     }
 ]
 

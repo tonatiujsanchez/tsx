@@ -9,7 +9,7 @@ export const Projects = () => {
             <ProjectLeft
                 type="Sitio web"
                 title="Legado de Tlapa"
-                description="Diseñe y Desarrolle el sitio web de noticias del medio de comunicacion &apos;Legado de Tlapa&apos; con un dashboard administrativo para administrar su contenido con roles de usuario. Tambien implementé una API Rest del mismo para ser consumida por una Aplicación movil."
+                description="Diseñe y Desarrolle el sitio web de noticias del medio de comunicación &apos;Legado de Tlapa&apos; con un dashboard administrativo para administrar su contenido con roles de usuario. También implementé una API Rest del mismo para ser consumida por una Aplicación movil."
                 bgImage="/img/projects/legado-de-tlapa-bg-yellow.webp"
                 image="/img/projects/legado-de-tlapa-pc.webp"
                 slug="legado-de-tlapa"
@@ -17,7 +17,7 @@ export const Projects = () => {
             <ProjectRight
                 type="Sitio web"
                 title="Contextos Guerrero"
-                description="Diseñe y Desarrolle el sitio web de noticias del medio de comunicacion &apos;Contextos Guerrero&apos; con un dashboard administrativo con roles de usuario para administrar su estructura y contenido."
+                description="Diseñe y Desarrolle el sitio web de noticias del medio de comunicación &apos;Contextos Guerrero&apos; con un dashboard administrativo con roles de usuario para administrar su estructura y contenido."
                 bgImage="/img/projects/contextos-guerrero-bg.webp"
                 image="/img/projects/contextos-guerrero-pc.webp"
                 slug="contextos-guerrero"
@@ -39,12 +39,12 @@ export const Projects = () => {
                 slug="admin-sites"
             />
             <ProjectLeft
-                type="Ecommerce"
-                title="Teslo Shop"
-                description="Desarrolle una tienda de ropa en linea, producto de haber concluido en el curso 'Next.js: El framework de React para producción'"
-                bgImage="/img/projects/teslo-shop-bg.webp"
-                image="/img/projects/teslo-shop-pc.webp"
-                slug="teslo-shop"
+                type="Aplicación web"
+                title="DevManager"
+                description="DevManager es un proyecto personal que constantemente mejoro y añado funcionalidades para gestionar proyectos colaborativos con funcionalidades en tiempo real, mismo que utilizo en mi día a día."
+                bgImage="/img/projects/devmanager-bg.webp"
+                image="/img/projects/devmanager-pc.webp"
+                slug="devmanager"
             />
 
         </section>
