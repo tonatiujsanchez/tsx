@@ -367,11 +367,11 @@ export const projects:IProject[] = [
     },
     {
         title: "Admin Sites",
-        subtitle: "Dashboard administrativo para sitios web informativos",
+        subtitle: "Dashboard administrativo para sitios web informativos con roles de usuarios",
         slug:"admin-sites",
         type:"Aplicación Web",
         summary: "<p>Diseñe y Desarrolle un dashboard administrativo con roles de usuario para administrar la estructura y contenido de sitios web informativos.</p>",
-        description: "<p>Diseñe y Desarrolle un dashboard administrativo con roles de usuario para administrar la estructura y contenido de sitios web informativos.</p>",
+        description: "<p>Diseñé y desarrollé un completo dashboard administrativo con roles de usuario, destinado a la gestión eficiente de la estructura y el contenido de sitios web informativos.</p><p>El propósito principal de este proyecto es tener una solución versátil y ágil, lista para ser implementada en los sitios web de futuros clientes. Diseñado estratégicamente, este dashboard proporciona una sólida base que puede escalarse y adaptarse fácilmente a las necesidades específicas de cada cliente. Su flexibilidad y robustez garantizan una gestión efectiva del contenido y una experiencia fluida para los usuarios finales.</p>",
         image: "/img/projects/admin-sites-pc-mobile.webp",
         imagePreview: "/img/projects/admin-sites-pc.webp",
         bgImage: "/img/projects/admin-sites-bg.webp",
@@ -431,8 +431,53 @@ export const projects:IProject[] = [
             "Desktop",
             "Mobile"
         ],
-        images: [],
-        message: "",
+        images: [
+            {
+                title: "Iniciar Sesión",
+                url  : "/img/projects/admin-sites/vista-01.webp"
+            },
+            {
+                title: "Administrar artículos",
+                url  : "/img/projects/admin-sites/vista-02.webp"
+            },
+            {
+                title: "Administrar imágenes",
+                url  : "/img/projects/admin-sites/vista-03.webp"
+            },
+            {
+                title: "Administrar categorías",
+                url  : "/img/projects/admin-sites/vista-04.webp"
+            },
+            {
+                title: "Administrar autores",
+                url  : "/img/projects/admin-sites/vista-05.webp"
+            },
+            {
+                title: "Administrar etiquetas",
+                url  : "/img/projects/admin-sites/vista-06.webp"
+            },
+            {
+                title: "Administrar usuarios",
+                url  : "/img/projects/admin-sites/vista-07.webp"
+            },
+            {
+                title: "Nuevo artículo",
+                url  : "/img/projects/admin-sites/vista-08.webp"
+            },
+            {
+                title: "Añadir imágenes al artículo",
+                url  : "/img/projects/admin-sites/vista-09.webp"
+            },
+            {
+                title: "Añadir etiquetas al artículo",
+                url  : "/img/projects/admin-sites/vista-10.webp"
+            },
+            {
+                title: "Agregar autor",
+                url  : "/img/projects/admin-sites/vista-11.webp"
+            },
+        ],
+        message: "El proceso de desarrollo de este proyecto ha sido una experiencia enriquecedora y gratificante. A lo largo del camino, he fortalecido mis habilidades en diseño y desarrollo web, así como en la creación de soluciones prácticas, escalables y eficientes para las necesidades específicas de los clientes. Esta experiencia me ha permitido adquirir una comprensión más profunda de la gestión de proyectos, la arquitectura de software y la optimización de la experiencia del usuario.",
         properties: {
             spaceBetween: 10,
             slidesPerView: 2,
@@ -443,7 +488,7 @@ export const projects:IProject[] = [
     },
     {
         title: "DevManager",
-        subtitle: "¡Gestiona tus Proyectos con Colaboradores en Tiempo Real!",
+        subtitle: "Gestor de Proyectos Colaborativos en Tiempo Real",
         slug:"devmanager",
         type:"Aplicación Web",
         summary: "<p>DevManager es un proyecto personal en constante evolución, diseñado para la gestión eficiente de proyectos colaborativos con características en tiempo real. Lo utilizo diariamente y estoy comprometido con su mejora continua y la adición de nuevas funcionalidades.</p>",

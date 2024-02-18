@@ -38,8 +38,18 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                     className="h-full w-full object-cover absolute mix-blend-overlay"
                 />
                 <div className="text-white z-20 text-center">
-                    <h1 className="font-extrabold text-4xl sm:text-5xl md:text-6xl mb-2" style={{ textShadow: '1px 2px 2px rgba(0,0,0, 0.5)' }}>{project.title}</h1>
-                    <p className="font-bold text-xl sm:text-2xl" style={{ textShadow: '1px 1px 2px rgba(0,0,0, 0.5)' }}>{project.subtitle}</p>
+                    <h1 
+                        className="font-extrabold text-4xl sm:text-5xl md:text-6xl mb-2" 
+                        style={{ textShadow: '1px 2px 2px rgba(0,0,0, 0.5)' }}
+                    >
+                        { project.title }
+                    </h1>
+                    <p 
+                        className="font-bold text-xl sm:text-2xl max-w-[48rem] mx-auto px-1 text-pretty" 
+                        style={{ textShadow: '1px 1px 2px rgba(0,0,0, 0.5)' }}
+                    >
+                        { project.subtitle }
+                    </p>
                 </div>
                 <NextLink
                     href={`/#${ project.slug }`}
