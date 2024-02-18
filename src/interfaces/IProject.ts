@@ -13,7 +13,7 @@ export interface IProject {
     banner     : string
     technologies: ITechnology[]
     links      : ILink[]
-    position   : 'left' | 'right'
+    position   : IProjectPositions
     client     : string
     versions   : string[]
     images     : IImageCapture[]
@@ -21,6 +21,8 @@ export interface IProject {
     properties : PropertiesViewProject
 }
 
+
+export type IProjectPositions = 'left' | 'right'
 
 export interface ITechnology {
     name       : string

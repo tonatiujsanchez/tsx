@@ -51,6 +51,9 @@ module.exports = {
         },
         emotion: {
           600: '#D26AC2'
+        },
+        redux: {
+          600: '#764ABC'
         }
       }
     },

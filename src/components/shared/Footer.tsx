@@ -9,6 +9,7 @@ export const Footer:FC<Props> = ({ bgColor='' }) => {
     return (
         <footer className={`border-t py-1 sm:py-4 ${ bgColor }`}>
             <p className="text-center">
+                © { new Date().getFullYear() } &nbsp;
                 <a href="https://twitter.com/tonatiujsanchez"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -16,7 +17,6 @@ export const Footer:FC<Props> = ({ bgColor='' }) => {
                 >
                         @tonatiujsanchez 
                 </a>
-                &nbsp; © { new Date().getFullYear() } Todos los derechos reservados 
             </p>
         </footer>
     )

@@ -1,4 +1,5 @@
-import { IProject } from "@/interfaces";
+import { projectPositions } from "@/constants";
+import { IProject, IProjectPositions } from "@/interfaces";
 
 
 export const projects:IProject[] = [
@@ -51,7 +52,7 @@ export const projects:IProject[] = [
             },
         ],
         client: "Legado de Tlapa",
-        position: "right",
+        position: projectPositions.LEFT as IProjectPositions,
         links: [
             {
                 title: "Ver proyecto",
@@ -180,7 +181,7 @@ export const projects:IProject[] = [
             },
         ],
         client: "Contextos Guerrero",
-        position: "left",
+        position: projectPositions.RIGHT as IProjectPositions,
         links: [
             {
                 title: "Ver proyecto",
@@ -258,7 +259,7 @@ export const projects:IProject[] = [
         slug:"share-groups",
         type: "Aplicación Web",
         summary: "<p>Diseñe y Desarrolle una aplicación web para administrar páginas, perfiles y grupos de Facebook con el objetivo de compartir publicaciones de forma aleatoria.</p>",
-        description: "<p>Diseñe y Desarrolle una aplicación web para administrar páginas, perfiles y grupos de Facebook con el objetivo de compartir publicaciones de dichas páginas de forma aleatoria. Este sistema fue desarrollado con la metodología Movil First.</p><p>Aunque actualmente este sistema solo es usado por los miembros de una agencia, está construido para que en un futuro cualquier usuario o agencia pueda registrarse y administrar sus propias páginas y grupos de Facebook.</p>",
+        description: "<p>Diseñe y Desarrolle una aplicación web para administrar páginas, perfiles y grupos de Facebook con el objetivo de compartir publicaciones de dichas páginas de forma aleatoria. Este sistema fue desarrollado con la metodología Movil First.</p><p>Aunque actualmente este sistema solo es usado por los miembros de una agencia, durante su construcción fue pensado y diseñado para que en un futuro cualquier usuario o agencia pueda registrarse y administrar sus propias páginas y grupos de Facebook.</p>",
         image: "/img/projects/share-groups-pc-mobile.webp",
         imagePreview: "/img/projects/share-groups-pc.webp",
         bgImage: "/img/projects/share-groups-bg-blue.webp",
@@ -296,7 +297,7 @@ export const projects:IProject[] = [
             },
         ],
         client: "JMX Agencia de publicidad y desarrollo web",
-        position: "left",
+        position: projectPositions.LEFT as IProjectPositions,
         links: [
             {
                 title: "Ver proyecto",
@@ -373,7 +374,7 @@ export const projects:IProject[] = [
         description: "<p>Diseñe y Desarrolle un dashboard administrativo con roles de usuario para administrar la estructura y contenido de sitios web informativos.</p>",
         image: "/img/projects/admin-sites-pc-mobile.webp",
         imagePreview: "/img/projects/admin-sites-pc.webp",
-        bgImage: "/img/projects/admin-sites-bg-blue.webp",
+        bgImage: "/img/projects/admin-sites-bg.webp",
         banner: "/img/projects/admin-sites-banner.webp",
         technologies: [
             {
@@ -413,7 +414,7 @@ export const projects:IProject[] = [
             },
         ],
         client: "JMX Agencia de publicidad y desarrollo web",
-        position: "right",
+        position: projectPositions.RIGHT as IProjectPositions,
         links: [
             {
                 title: "Ver proyecto",
@@ -448,8 +449,8 @@ export const projects:IProject[] = [
         summary: "<p>DevManager es un proyecto personal en constante evolución, diseñado para la gestión eficiente de proyectos colaborativos con características en tiempo real. Lo utilizo diariamente y estoy comprometido con su mejora continua y la adición de nuevas funcionalidades.</p>",
         description: "<p>DevManager es un proyecto personal en constante evolución, diseñado para la gestión eficiente de proyectos colaborativos con características en tiempo real. Lo utilizo diariamente y estoy comprometido con su mejora continua y la adición de nuevas funcionalidades.</p>",
         image: "/img/projects/devmanager-pc-mobile.webp",
-        imagePreview: "/img/projects/admin-sites-pc.webp",
-        bgImage: "/img/projects/admin-sites-bg-blue.webp",
+        imagePreview: "/img/projects/devmanager-pc.webp",
+        bgImage: "/img/projects/devmanager-bg.webp",
         banner: "/img/projects/devmanager-banner.webp",
         technologies: [
             {
@@ -458,14 +459,19 @@ export const projects:IProject[] = [
                 styleClases: "border border-react-600 text-react-600"
             },
             {
-                name: "Typescript",
-                icon: "typescript-icon.svg",
-                styleClases: "border border-typescript-600"
-            },
-            {
                 name: "Node",
                 icon: "nodejs-icon.svg",
                 styleClases: "border border-node-600"
+            },
+            {
+                name: "Express.js",
+                icon: "expressjs-icon.svg",
+                styleClases: "border border-gray-800"
+            },
+            {
+                name: "Typescript",
+                icon: "typescript-icon.svg",
+                styleClases: "border border-typescript-600"
             },
             {
                 name: "Mongo DB",
@@ -477,9 +483,19 @@ export const projects:IProject[] = [
                 icon: "tailwind-icon.svg",
                 styleClases: "border border-tailwind-600"
             },
+            {
+                name: "Redux Toolkit",
+                icon: "redux-icon.svg",
+                styleClases: "border border-redux-600"
+            },
+            {
+                name: "Socket.IO",
+                icon: "socket-io-icon.svg",
+                styleClases: "border border-gray-950"
+            },
         ],
         client: "Proyecto personal",
-        position: "right",
+        position: projectPositions.LEFT as IProjectPositions,
         links: [
             {
                 title: "Ver proyecto",
@@ -501,8 +517,49 @@ export const projects:IProject[] = [
             "Desktop",
             "Mobile"
         ],
-        images: [],
-        message: "",
+        images: [
+            {
+                title: "Inicio",
+                url  : "/img/projects/devmanager/vista-01.webp"
+            },
+            {
+                title: "Crear Cuenta",
+                url  : "/img/projects/devmanager/vista-02.webp"
+            },
+            {
+                title: "Iniciar Sesión",
+                url  : "/img/projects/devmanager/vista-03.webp"
+            },
+            {
+                title: "Administrar proyectos",
+                url  : "/img/projects/devmanager/vista-04.webp"
+            },
+            {
+                title: "Buscar proyectos",
+                url  : "/img/projects/devmanager/vista-05.webp"
+            },
+            {
+                title: "Administrar tareas del proyecto",
+                url  : "/img/projects/devmanager/vista-06.webp"
+            },
+            {
+                title: "Agregar nueva tarea al proyecto",
+                url  : "/img/projects/devmanager/vista-07.webp"
+            },
+            {
+                title: "Añadir colaborador al proyecto",
+                url  : "/img/projects/devmanager/vista-08.webp"
+            },
+            {
+                title: "Colaboradores del proyecto",
+                url  : "/img/projects/devmanager/vista-09.webp"
+            },
+            {
+                title: "Recuperar contraseña",
+                url  : "/img/projects/devmanager/vista-10.webp"
+            },
+        ],
+        message: "Desarrollar este proyecto ha sido muy emocionante, ya que DevManager es un proyecto al que le he puesto mucho empeño y cariño, y constantemente añado mejoras, lo utilizo en mi día a día para mantener el rumbo a la hora de desarrollar mis proyectos personales y el de mis clientes. En el camino he aprendido mucho sobre los procesos de desarrollo de software y la colaboración de los mismos.",
         properties: {
             spaceBetween: 10,
             slidesPerView: 2,

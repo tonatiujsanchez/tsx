@@ -46,7 +46,10 @@ export const ProjectRight: FC<Project> = ({ type, title, description, bgImage, i
             <ProjectDescription className="max-w-[32rem] flex flex-col items-center sm:items-start lg:mb-16 ml-auto sm:pl-7">
                 <p className="text-[1.1rem] mb-2">{ type }</p>
                 <h3 className="font-bold text-xl sm:text-[2rem] text-center sm:text-left mb-3">{ title }</h3>
-                <p className="text-center sm:text-left mb-3 sm:mb-5 md:text-lg">{ description }</p>
+                <div
+                    className="text-center sm:text-left mb-3 sm:mb-5 md:text-lg" 
+                    dangerouslySetInnerHTML={{ __html: description }}
+                ></div>
                 <NextLink href={`/proyectos/${ slug }`} className="link-project learn-more">
                     <span className="circle" aria-hidden="true">
                         <span className="icon arrow"></span>
