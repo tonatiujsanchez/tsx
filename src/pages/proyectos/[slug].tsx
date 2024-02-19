@@ -76,8 +76,8 @@ const ProyectPage: NextPage<Props> = ({ project }) => {
                         </figure>
                         <div className="flex flex-col items-center sm:items-start lg:mb-16">
                             <div>
-                                <p className="text-base sm:text-xl mb-1 sm:mb-4 font-medium">{project.type}</p>
-                                <h2 className="font-bold text-[1.5rem] sm:text-[2rem] mb-3 sm:mb-5">{project.title}</h2>
+                                <p className="text-base sm:text-lg font-medium text-slate-600 mb-1">{project.type}</p>
+                                <h2 className="font-bold text-[1.5rem] sm:text-[2rem] mb-3 sm:mb-5 leading-8">{project.title}</h2>
                                 <div className="[&>p]:md:text-lg [&>p]:mb-2 mb-3" dangerouslySetInnerHTML={{ __html: project.description }}></div>
                             </div>
                             <div className="mt-5">

@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export const AboutMe = () => {
     return (
-        <article className="bg-white">
+        <section id="about" className="bg-white">
             <SectionAbout className="py-10 sm:py-28 bg-white">
                 <div className="container px-5 flex flex-col md:flex-row md:items-center gap-10 lg:gap-24">
                     <div className="md:w-[40%] p-10 relative">
@@ -86,7 +86,7 @@ export const AboutMe = () => {
                     </div>
                 </div>
             </SectionAbout>
-        </article>
+        </section>
     )
 }
 
@@ -96,7 +96,6 @@ const SectionAbout = styled.div`
     background: radial-gradient(45.48% 30.48% at 90.38% 74.52%, #d5e9f1 0%, rgba(255, 255, 255, 0) 100%);
     
     @media (min-width: 640px) {
-        /* background: radial-gradient(20.48% 40.48% at 20.38% 60.52%, #CDE9F5 5%, rgba(255, 255, 255, 0) 90%); */
         background: radial-gradient(32.48% 53.48% at 90.38% 60.52%, #ddedf3 0%, rgba(255, 255, 255, 0) 100%);
 
     }

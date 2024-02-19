@@ -7,7 +7,7 @@ interface Props {
 
 export const Footer:FC<Props> = ({ bgColor='' }) => {
     return (
-        <footer className={`border-t py-1 sm:py-4 ${ bgColor }`}>
+        <footer className={`border-t py-3 sm:py-4 ${ bgColor }`}>
             <p className="text-center">
                 © { new Date().getFullYear() } &nbsp;
                 <a href="https://www.linkedin.com/in/tonatiujsanchez"

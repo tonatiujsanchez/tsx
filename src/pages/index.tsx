@@ -10,14 +10,11 @@ export default function Home() {
     return (
         <LayoutMain>
             <Hero />
-            <section id="about">
-                <AboutMe />
-                <SkillsAndExperience />
-            </section>
-            <main className="bg-white">
+            <SkillsAndExperience />
+            <main>
                 <Projects />
             </main>
-
+            <AboutMe />
             <Contact />
             <Footer />
         </LayoutMain>

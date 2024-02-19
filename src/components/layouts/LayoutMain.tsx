@@ -46,7 +46,6 @@ export const LayoutMain:FC<Props> = ({ children }) => {
                 <title>Tonatiuj Sánchez</title>
             </Head>
             <Header />
-
             { children }
         </>
     )
