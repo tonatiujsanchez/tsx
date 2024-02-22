@@ -196,6 +196,16 @@ export const SkillsAndExperience = () => {
                         <h2 className="text-center font-extrabold text-3xl md:text-3xl uppercase mb-5 sm:mb-10 lg:mb-16">Experiencia</h2>
                         <div className="">
                             <div className="flex gap-12 mb-10">
+                                <div className="text-blue-700 font-semibold">2024</div>
+                                <div className="flex flex-col gap-5">
+                                    <div>
+                                        <p className="font-bold text-lg lg:text-xl">DevManager</p>
+                                        <p className="text-slate-700 lg:text-lg mb-1">Diseño, Desarrollo, Mantenimiento y Despliegue de una aplicación web colaborativa.</p>
+                                        <p className="text-slate-500 italic text-sm"><span className="underline">Tecnologías: </span>HTML, CSS, TailwindCSS, Javascript, Typescript, React, Next.js, Node.js, MongoDB y Redux Toolkit</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex gap-12 mb-10">
                                 <div className="text-blue-700 font-semibold">2023</div>
                                 <div className="flex flex-col gap-5">
                                     <div>
@@ -212,7 +222,7 @@ export const SkillsAndExperience = () => {
                                 </div>
                             </div>
                             <div className="flex gap-12 mb-10">
-                                <div className="text-blue-700 font-semibold">2022</div>
+                                <div className="text-blue-700 font-semibold">2023-2022</div>
                                 <div className="flex flex-col gap-5">
                                     <div>
                                         <p className="font-bold text-lg lg:text-xl">JMX (Agencia de Publicidad)</p>
