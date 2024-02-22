@@ -60,7 +60,7 @@ export const Hero = () => {
                 <div className="md:order-1 sm:px-5 sm:w-[70%] md:w-[55%]">
                     <p className="font-bold text-xl mb-0 md:mb-3">¡Hola! 👋 soy</p>
                     <h1 className="text-[2.3rem] sm:text-[2.4rem] lg:text-[3.5rem] xl:text-[3.9rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600 mb-1 md:mb-3">Tonatiuj Sánchez</h1>
-                    <p className="mb-5 md:text-xl max-w-[40rem]">Desarrollador Web Frontend en React.js, con conocimientos sólidos de Node.js</p>
+                    <p className="mb-5 md:text-xl max-w-[40rem] text-pretty">Desarrollador Web FullStack al que le encanta aprender y construir cosas nuevas constantemente.</p>
                     <LinkProjects href="#projects" className="learn-more">
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>
