@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 import { NextRequest } from 'next/server'
 
 const allowedOrigins = process.env.NODE_ENV === 'production' 
-? [ 'https://tonatiuj-sanchez.vercel.app', 'https://tsx-dev.vercel.app' ]
+? [ 'https://tonatiuj-sanchez.vercel.app', 'https://tsx-dev.vercel.app', 'https://tsx-dev.netlify.app' ]
 : [ 'http://localhost:3000', 'http://127.0.0.1:5500' ]
  
 const corsOptions = {
@@ -32,7 +32,6 @@ export async function middleware( req: NextRequest ) {
 
         // Handle simple requests
         const response = NextResponse.next()
-        console.log("/api/public => CORS", { isAllowedOrigin })
 
         if( isAllowedOrigin ){
             response.headers.set('Access-Control-Allow-Origin', origin)
